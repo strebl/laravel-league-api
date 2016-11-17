@@ -14,7 +14,7 @@ Game::recent(Summoner::get('liqy'));
 ```
 
 [![Build Status](https://img.shields.io/travis/strebl/laravel-league-api/master.svg?style=flat)](https://travis-ci.org/strebl/laravel-league-api)
-[![StyleCI](https://styleci.io/repos/30237105/shield?style=flat)](https://styleci.io/repos/30237105)
+[![StyleCI](https://styleci.io/repos/74075797/shield?style=flat)](https://styleci.io/repos/74075797)
 [![Coverage Status](https://img.shields.io/codecov/c/github/strebl/laravel-league-api.svg?style=flat)](https://codecov.io/github/strebl/laravel-league-api)
 [![Latest Version](https://img.shields.io/github/release/strebl/laravel-league-api.svg?style=flat)](https://github.com/strebl/laravel-league-api/releases)
 [![License](https://img.shields.io/packagist/l/strebl/laravel-league-api.svg?style=flat)](https://packagist.org/packages/strebl/laravel-league-api)
