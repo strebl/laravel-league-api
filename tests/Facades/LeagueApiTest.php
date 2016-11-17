@@ -14,7 +14,6 @@ namespace Strebl\Tests\LeagueApi;
 use GrahamCampbell\TestBenchCore\FacadeTrait;
 use Strebl\LeagueApi\Facades\LeagueApi;
 use Strebl\LeagueApi\LeagueApiManager;
-use Strebl\Tests\LeagueApi\AbstractTestCase;
 
 /**
  * This is the LeagueApi facade test class.

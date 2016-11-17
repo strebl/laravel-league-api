@@ -12,8 +12,8 @@
 namespace Strebl\Tests\LeagueApi;
 
 use GrahamCampbell\TestBench\AbstractTestCase as AbstractTestBenchTestCase;
-use LeagueWrap\Api;
 use Illuminate\Contracts\Config\Repository;
+use LeagueWrap\Api;
 use Mockery;
 use Strebl\LeagueApi\LeagueApiFactory;
 use Strebl\LeagueApi\LeagueApiManager;
