@@ -30,11 +30,11 @@ class LeagueApiFactoryTest extends AbstractTestCase
             'proxies' => true,
             'rate-limits' => [
                 [
-                    'requests'    => 20,
+                    'requests' => 20,
                     'per_seconds' => 20,
                 ],
                 [
-                    'requests'    => 300,
+                    'requests' => 300,
                     'per_seconds' => 300,
                 ],
             ],
@@ -42,7 +42,7 @@ class LeagueApiFactoryTest extends AbstractTestCase
 
         $this->assertInstanceOf(Api::class, $return);
 
-        collect($return->getLimits())->each(function($limit) {
+        collect($return->getLimits())->each(function ($limit) {
             $this->assertTrue(
                 $limit->remaining() == 20 || $limit->remaining() == 300
             );

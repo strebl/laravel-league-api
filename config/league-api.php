@@ -21,9 +21,9 @@ return [
     | connections at once using the manager class.
     |
     */
-   
+
     'default' => 'main',
-   
+
     /*
     |--------------------------------------------------------------------------
     | League of Legends API Key
@@ -73,12 +73,12 @@ return [
             'rate-limits' => [
 
                 [
-                    'requests'    => 10,
+                    'requests' => 10,
                     'per_seconds' => 10,
                 ],
 
                 [
-                    'requests'    => 500,
+                    'requests' => 500,
                     'per_seconds' => 600,
                 ],
 

@@ -47,8 +47,8 @@ class LeagueApiFactory
     protected function getConfig(array $config)
     {
         return [
-            'api-key'     => array_get($config, 'api-key', ''),
-            'proxies'     => array_get($config, 'proxies', true),
+            'api-key' => array_get($config, 'api-key', ''),
+            'proxies' => array_get($config, 'proxies', true),
             'rate-limits' => array_get($config, 'rate-limits', []),
         ];
     }
@@ -68,7 +68,7 @@ class LeagueApiFactory
             $api->limit($limit['requests'], $limit['per_seconds']);
         });
 
-        if($config['proxies']) {
+        if ($config['proxies']) {
             StaticApi::mount();
         }
 
