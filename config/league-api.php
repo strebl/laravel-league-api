@@ -50,17 +50,6 @@ return [
 
             /*
             |--------------------------------------------------------------------------
-            | LeagueWrap Static Proxies
-            |--------------------------------------------------------------------------
-            |
-            | Register the static proxies for an easier API requests.
-            | https://github.com/LeaguePHP/LeagueWrap#staticproxy
-            |
-            */
-            'proxies' => true,
-
-            /*
-            |--------------------------------------------------------------------------
             | API Rate Limits
             |--------------------------------------------------------------------------
             |
@@ -88,7 +77,6 @@ return [
 
         'alternative' => [
             'api-key' => 'your-alternative-key',
-            'proxies' => true,
             'rate-limits' => [],
         ],
 

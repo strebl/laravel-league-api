@@ -12,7 +12,6 @@
 namespace Strebl\LeagueApi;
 
 use LeagueWrap\Api;
-use LeagueWrap\StaticApi;
 
 /**
  * This is the LeagueWrap Api factory class.
@@ -48,7 +47,6 @@ class LeagueApiFactory
     {
         return [
             'api-key' => array_get($config, 'api-key', ''),
-            'proxies' => array_get($config, 'proxies', true),
             'rate-limits' => array_get($config, 'rate-limits', []),
         ];
     }
@@ -67,10 +65,6 @@ class LeagueApiFactory
         collect($config['rate-limits'])->each(function ($limit) use ($api) {
             $api->limit($limit['requests'], $limit['per_seconds']);
         });
-
-        if ($config['proxies']) {
-            StaticApi::mount();
-        }
 
         return $api;
     }

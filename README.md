@@ -7,10 +7,10 @@
 LeagueApi::setRegion('euw');
 
 // Get info about a summoner.
-Summoner::info('liqy');
+LeagueApi::summoner()->info('liqy');
 
 // Get the recent games for liqy.
-Game::recent(Summoner::get('liqy'));
+LeagueApi::game()->recent(LeagueApi::summoner()->get('liqy'));
 ```
 
 [![Build Status](https://img.shields.io/travis/strebl/laravel-league-api/master.svg?style=flat)](https://travis-ci.org/strebl/laravel-league-api)

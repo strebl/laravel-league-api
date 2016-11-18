@@ -27,7 +27,6 @@ class LeagueApiFactoryTest extends AbstractTestCase
 
         $return = $factory->make([
             'api-key' => 'your-api-key',
-            'proxies' => true,
             'rate-limits' => [
                 [
                     'requests' => 20,
