@@ -64,7 +64,7 @@ This option `connections` is where each of the connections are setup for your ap
 
 This is the class of most interest. It is bound to the ioc container as `league-api` and can be accessed using the `Facades\LeagueApi` facade. This class implements the ManagerInterface by extending AbstractManager. The interface and abstract class are both part of [Graham Campbell's](https://github.com/GrahamCampbell) [Laravel Manager](https://github.com/GrahamCampbell/Laravel-Manager) package, so you may want to go and checkout the docs for how to use the manager class over at that repository. Note that the connection class returned will always be an instance of `LeagueWrap\Api`.
 
-#### Facades\Hashids
+#### Facades\LeagueApi
 
 This facade will dynamically pass static method calls to the `league-api` object in the ioc container which by default is the `LeagueApiManager` class.
 
@@ -86,7 +86,7 @@ LeagueApi::summoner()->info('liqy');
 The LeagueApi manager will behave like it is a `LeagueWrap\Api`. If you want to call specific connections, you can do that with the connection method:
 
 ```php
-use Strebl\LeagueApi\Facades\Hashids;
+use Strebl\LeagueApi\Facades\LeagueApi;
 
 // Writing this…
 LeagueApi::connection('main')->summoner()->info('liqy');
