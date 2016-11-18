@@ -4,7 +4,7 @@
 
 ```php
 // Set the region (default: na).
-API::setRegion('euw');
+LeagueApi::setRegion('euw');
 
 // Get info about a summoner.
 Summoner::info('liqy');
